@@ -1,0 +1,51 @@
+body{
+	background-color: rgb(255, 139, 80);
+}
+#wrap {
+    margin : 0 auto;
+    text-align: center;
+}
+#login{
+    position: absolute;
+    top:40%;
+    left:40%;
+    color: orangered;
+}
+fieldset{
+   border : 3px solid orangered;
+   background-color: white;
+}
+span{
+    display: inline-block;
+    width: 100px;
+}
+input {
+    width: 200px;
+    height: 24px;
+    border:none;
+    border-bottom:1px solid red;
+}
+input:focus{
+	outline:none;
+}
+#id{
+	margin:30px;
+}
+#log{
+	margin-top:40px;
+}
+#log input{
+	width : 100px;
+	height:35px;
+	margin : 0 30px 10px 30px;
+	display:inline-block;
+	background-color: orangered;
+	border-radius:20px;
+	color:white;
+	font-size:17px;
+	cursor:pointer;
+}
+
+#log input:hover, a:hover{
+	color : rgb(255, 170, 140);
+}

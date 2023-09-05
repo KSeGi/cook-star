@@ -1,0 +1,104 @@
+@charset "utf-8";
+*{
+    text-decoration-line: none;  
+}
+#wrap{
+    width:1200px;
+    margin:0 auto;
+}
+#logWrap{
+    height:30px;
+    background-color: orangered;
+    padding-top :5px;
+    margin-top :5px;
+}
+#CS{
+    color: beige;
+    float:left;
+    padding-left: 10px;
+}
+
+.log>a{
+    color:white;
+    float:right;
+    padding-right: 10px;
+}
+.log>a:hover{
+    color : rgba(243, 176, 185, 0.925);
+}
+
+  /*  상단창과 로그인 끝나는 부분 */
+h1{
+	text-align:center;
+	width:800px;
+	margin:0 auto;
+	margin-top:100px;
+	color:rgba(255, 81, 0, 0.911);	
+}
+form{
+	margin:100px 0 0 250px;
+	width:1000px;
+}
+ul{
+	list-style:none;
+}
+ul li:first-child{
+	float:left;
+	color:orangered;
+	font-weight:bold;
+	margin-top:30px;
+	border:2px solid orangered;
+	width:150px;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	border-radius:10px;
+}
+.info{
+	margin-left:200px;
+	color:red;
+	font-size:small;
+}
+li input{
+	margin-top:25px;
+	margin-left:10px;
+	border:none;
+	border-bottom:2px solid orangered;
+	width:450px;
+	height:40px;
+	font-size:20px;
+}
+li input:focus{
+	outline:none;
+}
+
+.btnCheck{
+	width:80px;
+	border:none;
+	background-color:orangered;
+	color:white;
+	font-size:15px;
+	border-radius:10px;
+	position: relative;
+	top:2px;
+    left:-20px;
+}
+
+
+.phone{
+	text-align:center;
+	border-bottom:2px solid orangered;
+	width:100px;
+	margin:30px 20px 0 20px;
+}
+
+.btn{
+	width:100px;
+	padding:10px;
+	font-size:15px;
+	color:white;
+	border:none;
+	background-color:orangered;
+	border-radius:10px;
+	margin:50px 0 100px 180px;
+}

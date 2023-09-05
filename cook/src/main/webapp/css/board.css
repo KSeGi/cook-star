@@ -1,0 +1,335 @@
+*{
+    text-decoration: none;
+    list-style: none;
+}
+#wrap{
+    width:1500px;
+    margin:0 auto;
+}
+
+/* 상단바 */
+#logWrap{
+    height:30px;
+    background-color: orangered;
+    padding-top :5px;
+    margin-top :5px;
+}
+#CS{
+    color: beige;
+    float:left;
+    padding-left: 10px;
+}
+
+.log>a{
+    color:white;
+    float:right;
+    padding-right: 10px;
+}
+.log>a:hover{
+    color : rgba(243, 176, 185, 0.925);
+}
+#search{
+	float:right;
+}
+#search_text{
+    width:150px;
+    height:18px;
+    border-color: red;
+  	border-radius:10px;
+  	outline: none;
+}
+#header_btn{
+    width:20px;
+	height:20px;
+    color:red;
+    background-color:white;
+    border:none;
+    position: relative;
+    top:1px;
+    left:-35px;
+}
+
+/* 상단바 끝 */
+
+/*측면 메뉴창*/
+
+#menu ul, li{
+	margin:0;
+	padding:0;
+}
+
+#menu>ul ul{
+	display: none;
+	position: absolute;
+ 	top: 0;
+  	left: 100%;
+	width: 100%;
+}
+
+#menu {
+  position: fixed;
+  width: 50px;
+  height:55px;
+  margin-top: 20px;
+  background-color: rgb(254, 126, 58);
+  overflow: hidden;	/* 넘치는 메뉴 요소 숨기기 */
+  transition: .5s;
+  border-radius: 20px;
+  
+}
+
+#menu ul > li > a {
+  display: block;
+  color: white;
+  padding: 20px 20px;
+  white-space: nowrap;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+/* 마우스 인식 시 너비 확장 */
+#menu:hover {
+  width: 180px;
+  height: 500px;
+  overflow: visible;
+}
+
+/* 사이드바가 늘어나기 전 메뉴 노출 차단 */
+#menu > ul > li > a{
+  opacity: 0;
+  transition: .5s .1s;
+}
+
+#menu:hover > ul > li > a{
+  opacity: 1;
+}
+
+#menu > ul > li {
+  position: relative;
+}
+/* 모든 메뉴가 마우스 인식 시 반응 */
+#menu ul > li:hover > a {
+  background-color: rgb(254, 154, 101);
+}
+
+/* 1차 메뉴의 항목이 마우스 인식 시에 2차 메뉴 등장 */
+#menu > ul > li:hover > ul {
+  display: block;
+  position: absolute;
+  background-color: rgb(254, 196, 165);
+  top: 0;         /* 2차 메뉴의 상단을 1차 메뉴의 상단에 고정 */
+  left: 100%;     /* 2차 메뉴를 1차 메뉴의 너비만큼 이동 */
+  width: 100%;    /* 1차 메뉴의 너비를 상속 */
+}
+
+
+
+/* 아이콘 시작 */
+.iconbox {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.icon {
+  position: relative;
+  width: 23px;
+  height: 17px;
+  margin: 15px;
+  margin-top: 20px;
+  transition: .5s;
+}
+
+:root {
+  --side-bar__icon: .5s;
+}
+
+.icon > div {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  background-color: white;
+  transition: all var(--side-bar__icon);
+}
+
+.icon > div:nth-of-type(1) {
+  top: 0;
+  width: auto;
+  left: 0;
+  right: 0;
+  transition: all var(--side-bar__icon), left calc(var(--side-bar__icon) / 2) calc(var(--side-bar__icon) / 2), right calc(var(--side-bar__icon) / 2) calc(var(--side-bar__icon) / 2), height calc(var(--side-bar__icon) / 2) 0s;
+}
+
+.icon > div:nth-of-type(2) {
+  top: 40%;
+  transform-origin:bottom left;
+}
+
+.icon > div:nth-of-type(3) {
+  top: 80%;
+  left: auto;
+  right: 0;
+  transform-origin:bottom right;
+}
+
+
+#menu:hover .icon {
+  transform: translate(-198px, 0);
+}
+
+#menu:hover .icon > div:nth-of-type(2) {
+  transform:rotate(45deg);
+  width: 70.5%;
+  height: 25%;
+}
+
+#menu:hover .icon > div:nth-of-type(3) {
+  top: 40%;
+  transform:rotate(-45deg);
+  width: 70.5%;
+  height: 25%;
+}
+
+#menu:hover .icon > div:nth-of-type(1) {
+  left: 41%;
+  right: 41%;
+  height: 100%;
+  transition: all var(--side-bar__icon), left calc(var(--side-bar__icon) / 2) 0s, right calc(var(--side-bar__icon) / 2) 0s, height calc(var(--side-bar__icon) / 2) calc(var(--side-bar__icon) / 2);
+}
+/* 아이콘 끝 */
+/*측면 메뉴창 끝*/
+
+/*boardList 시작*/
+#boardList{
+	width:1200px;
+	margin: 0 auto;
+}
+
+h1{
+	margin:100px 0 50px 80px;
+	width:250px;
+	height:50px;
+	border-bottom: 1px solid rgb(255, 206, 176);
+}
+
+/*검색 창*/
+#search-word{
+	display: inline-block;
+	margin-left:300px;
+}
+#main-search{
+    width:500px;
+    height: 40px;
+    border: 1px solid red;
+    border-radius: 80px;
+    outline:none;
+   	padding-left: 10px;
+}
+#btn-search{
+    width:70px;
+    height:46px;
+    color:white;
+    border-radius: 80px;
+    background-color:red;
+    border: none;
+    position: relative;
+    left:-65px;
+}
+
+/*검색 창 끝*/
+
+#boardList  ul{
+	list-style:none;
+	content:"";
+	display:block;
+	clear:both;
+}
+#boardList  li{
+	float:left;
+	border-bottom:2px solid rgb(200,200,200);
+	text-align:center;
+	height: 50px;
+	line-height: 50px;
+}
+.insert{
+	margin:150px 85px 10px 0;
+	color:rgb(254, 149, 103);
+	font-weight: bold;
+	float:right;
+	padding:5px;
+	border: 1px solid rgb(254, 97, 29);
+	border-radius: 5px;
+}
+.insert:hover{
+	color:white;
+}
+
+#top li{
+	background-color:rgb(254, 97, 29);
+	color: white;
+}
+
+.list{
+	width:100px;
+	
+}
+.star{
+	width:110px;
+}
+.title{
+	width:500px;
+}
+.title > a, .infotitle > a {
+	color:black;
+}
+.title> a:hover, .infotitle > a:hover{
+	color:gray;
+}
+.infotitle{
+	width:700px;
+}
+
+.nik{
+	width:110px;
+}
+.hit{
+	width:50px;
+}
+.date{
+	width:210px;
+}
+
+/* page 시작*/
+
+#page{
+	content:"";
+	display:block;
+	clear:both;
+	margin:150px 0 100px 500px;
+}
+
+.P{
+	background-color:rgb(255, 128, 64) !important;
+	color:white !important;
+	font-weight: bold;
+}
+
+#page a{
+	margin:0 3px;
+	float:left;
+	border:1px solid #e6e6e6;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	background-color:#fff;
+	font-size:13px;
+	color:#999999;
+	text-decoration:none;
+}
+
+
+#page a:hover{ 
+	color:rgb(255, 128, 64);
+	border:1px solid rgb(255, 128, 64);
+	font-weight: bold;
+}
