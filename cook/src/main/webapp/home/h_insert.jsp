@@ -9,8 +9,8 @@
 		<link rel="stylesheet" href="css/insert.css" type="text/css">
 	</head>
 	<body>
-	<div id=wrap>
-		 <div id="logWrap">
+	  <div id="wrap">
+	    <div id="logWrap">
 	        <div class="log" id="CS"><a href="index.jsp">CookStar★</a></div>
 		    <form method="post" action="Search" id="search">
 	            <input id="search_text" name="search" type="text">
@@ -56,7 +56,7 @@
 		                </ul>
 		            </li>
 		            <li><a href="MealMain?currentPage=1">밀키트's ☆</a></li>
-		            <li><a href="Mypage" class="mainmenu">My COOK's ☆</a></li>
+		            <li><a href="Mypage">My COOK's ★</a></li>
 		            <li><a href="InfoMain?currentPage=1">공지사항</a></li>
 				</ul>
 		</div>
@@ -64,7 +64,7 @@
     <!-- 측면 메뉴창 끝 -->
     
     
-		<form method = "post" enctype = "multipart/form-data" name = "frm" action="HomeInsert">
+		<form method = "post" enctype = "multipart/form-data" name = "frm" action="HomeInsert" id="frm">
 			<div>
 			<select name = "h_list" >
 				<option value="1" selected >다인 요리's ☆</option>

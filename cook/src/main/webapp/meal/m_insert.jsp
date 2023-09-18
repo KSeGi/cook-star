@@ -64,7 +64,7 @@
     <!-- 측면 메뉴창 끝 -->
     
     
-		<form method = "post" enctype = "multipart/form-data" name = "frm" action="MealInsert">
+		<form method = "post" enctype = "multipart/form-data" name = "frm" action="MealInsert" id="frm">
 			<div>
 				<input type="text" name="m_title" placeholder="제목을 입력해주세요.">
 			</div>

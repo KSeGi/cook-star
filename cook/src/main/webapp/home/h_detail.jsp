@@ -14,10 +14,10 @@
 			<div id=wrap>
 				<div id="logWrap">
 					<div class="log" id="CS"><a href="index.jsp">CookStar★</a></div>
-		    <form method="post" action="Search" id="search">
-	            <input id="search_text" name="search" type="text">
-	            <input id="header_btn" type="submit" value="🔍">
-	        </form>
+				    <form method="post" action="Search" id="search">
+			            <input id="search_text" name="search" type="text">
+			            <input id="header_btn" type="submit" value="🔍">
+			        </form>
 		        
 			 		<c:if test = "${sessionScope.user.u_id==null }">
 						<div class="log"><a href="Join" id="SignUp">회원가입</a></div>

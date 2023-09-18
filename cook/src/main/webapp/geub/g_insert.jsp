@@ -64,7 +64,7 @@
     <!-- 측면 메뉴창 끝 -->
     
     
-		<form method = "post" enctype = "multipart/form-data" name = "frm" action="GeubInsert">
+		<form method = "post" enctype = "multipart/form-data" name = "frm" action="GeubInsert" id="frm">
 			<div>
 			<select name = "g_list" >
 				<option value="1" selected >학교 요리's ☆</option>
